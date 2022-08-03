@@ -37,6 +37,16 @@ void Counter::stop()
     m_timer->stop();
 }
 
+void Counter::reset()
+{
+    m_timer->stop();
+    m_display = "00:00:00";
+    m_hours = 0;
+    m_minutes = 0;
+    m_seconds = 0;
+    emit displayChanged();
+}
+
 void Counter::timeout()
 {
     m_seconds++;

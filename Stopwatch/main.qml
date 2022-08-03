@@ -77,5 +77,12 @@ Window {
             }
         }
 
+        Button {
+            text: "Reset"
+            onClicked: {
+                counter.reset();
+            }
+        }
+
     }
 }

@@ -20,6 +20,7 @@ public slots:
     void setDisplay(QString display);
     void start();
     void stop();
+    void reset();
     void timeout();
 private:
     QString m_display;
